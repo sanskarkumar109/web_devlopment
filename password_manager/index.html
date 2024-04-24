@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password_junction : your personal password manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Password_junction</div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="conatiner">
+        <h1>Password Manager</h1>
+        <p>We are thriled to have you hare. nowadays your life has became more complicated
+            when you have to remember lot of passwords . but dont worry we are here for you 
+            you can store your password which will always remain safe with us ..
+        </p>
+        <h2>Your Passwords <span id="alert">(Copied !)</span></h2>
+        <table>
+            <tr>
+                <th>Website</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Delete</th>
+            </tr>
+        </table>
+        <h2>Add a Password</h2>
+        <form action="/submit" method="post">
+
+            <label for="website">Website : </label>
+            <input type="text" id="website" name="website" required>
+            <br><br>
+
+            <label for="username">Username : </label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <br>
+
+            <label for="password">Password : </label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <br>
+
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
